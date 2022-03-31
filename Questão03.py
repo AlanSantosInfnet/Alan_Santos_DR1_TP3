@@ -1,6 +1,11 @@
 
+
 nome_vencedor = ''
 nota_vencedor = 0.0
+
+def imprimir():
+    print(f'O(a) vencedor(a) foi {nome_vencedor} com nota {nota_vencedor}!')
+
 
 for contador in range(1,6):
     nome = input(f'Informe o nome do {contador}º participante: ')
@@ -13,5 +18,5 @@ for contador in range(1,6):
     else:
         print('Nota Invalida!!!')
 
-print(f'O(a) vencedor(a) foi {nome_vencedor} com nota {nota_vencedor}!')
+imprimir()
 

@@ -1,8 +1,4 @@
-
-
-idade = int(input('Informe a Idade: '))
-
-if idade > 0:
+def verificacaoIdade():
     if (idade >= 18) and (idade < 70):
         print('Tem Obrigação de Votar.')
 
@@ -15,6 +11,17 @@ if idade > 0:
     else:
         print('Não Tem Direito de Voto.')
 
-else:
-    print("Idade tem que ser Maior que '0'")
+
+def excecao():
+    if idade > 0:
+        verificacaoIdade()
+
+    else:
+        print("Idade tem que ser Maior que '0'")
+
+
+idade = int(input('Informe a Idade: '))
+
+excecao()
+
 
